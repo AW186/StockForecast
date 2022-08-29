@@ -14,6 +14,34 @@
 		C6453EEF28BD504B00775176 /* StockForecastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453EEE28BD504B00775176 /* StockForecastTests.swift */; };
 		C6453EF928BD504B00775176 /* StockForecastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453EF828BD504B00775176 /* StockForecastUITests.swift */; };
 		C6453EFB28BD504B00775176 /* StockForecastUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453EFA28BD504B00775176 /* StockForecastUITestsLaunchTests.swift */; };
+		C6453F2F28BD512C00775176 /* WelcomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F0928BD512C00775176 /* WelcomView.swift */; };
+		C6453F3028BD512C00775176 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F0A28BD512C00775176 /* LoadingView.swift */; };
+		C6453F3128BD512C00775176 /* XYChartDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F0C28BD512C00775176 /* XYChartDataSource.swift */; };
+		C6453F3228BD512C00775176 /* XYChartDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F0D28BD512C00775176 /* XYChartDelegate.swift */; };
+		C6453F3328BD512C00775176 /* XYChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F0E28BD512C00775176 /* XYChart.swift */; };
+		C6453F3428BD512C00775176 /* XYGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F0F28BD512C00775176 /* XYGraph.swift */; };
+		C6453F3528BD512C00775176 /* CGPoint + Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F1128BD512C00775176 /* CGPoint + Scale.swift */; };
+		C6453F3628BD512C00775176 /* TimePeriodTabsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F1328BD512C00775176 /* TimePeriodTabsDelegate.swift */; };
+		C6453F3728BD512C00775176 /* TimePeriodTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F1428BD512C00775176 /* TimePeriodTabs.swift */; };
+		C6453F3828BD512C00775176 /* UnitConvertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F1628BD512C00775176 /* UnitConvertion.swift */; };
+		C6453F3928BD512C00775176 /* FinancialAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F1728BD512C00775176 /* FinancialAPI.swift */; };
+		C6453F3A28BD512C00775176 /* Companies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F1828BD512C00775176 /* Companies.swift */; };
+		C6453F3B28BD512C00775176 /* en.xcloc in Resources */ = {isa = PBXBuildFile; fileRef = C6453F1A28BD512C00775176 /* en.xcloc */; };
+		C6453F3C28BD512C00775176 /* Exchanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F1B28BD512C00775176 /* Exchanges.swift */; };
+		C6453F3D28BD512C00775176 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F1C28BD512C00775176 /* JSONParser.swift */; };
+		C6453F3E28BD512C00775176 /* SearchBarDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F1E28BD512C00775176 /* SearchBarDataSource.swift */; };
+		C6453F3F28BD512C00775176 /* SeachIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F1F28BD512C00775176 /* SeachIcon.swift */; };
+		C6453F4028BD512C00775176 /* SearchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F2028BD512C00775176 /* SearchListView.swift */; };
+		C6453F4128BD512C00775176 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F2128BD512C00775176 /* SearchBar.swift */; };
+		C6453F4228BD512C00775176 /* SearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F2228BD512C00775176 /* SearchBarDelegate.swift */; };
+		C6453F4328BD512C00775176 /* TabViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F2428BD512C00775176 /* TabViewDelegate.swift */; };
+		C6453F4428BD512C00775176 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F2528BD512C00775176 /* TabView.swift */; };
+		C6453F4528BD512C00775176 /* DictionaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F2728BD512C00775176 /* DictionaryView.swift */; };
+		C6453F4728BD512C00775176 /* ViewController + SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F2A28BD512C00775176 /* ViewController + SearchBar.swift */; };
+		C6453F4828BD512C00775176 /* ViewController + TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F2B28BD512C00775176 /* ViewController + TabView.swift */; };
+		C6453F4928BD512C00775176 /* ViewController + XYGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F2C28BD512C00775176 /* ViewController + XYGraph.swift */; };
+		C6453F4A28BD512C00775176 /* ViewController + TimePeriodTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F2D28BD512C00775176 /* ViewController + TimePeriodTabs.swift */; };
+		C6453F4B28BD512C00775176 /* ObserveObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F2E28BD512C00775176 /* ObserveObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +73,34 @@
 		C6453EF428BD504B00775176 /* StockForecastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockForecastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6453EF828BD504B00775176 /* StockForecastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockForecastUITests.swift; sourceTree = "<group>"; };
 		C6453EFA28BD504B00775176 /* StockForecastUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockForecastUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C6453F0928BD512C00775176 /* WelcomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomView.swift; sourceTree = "<group>"; };
+		C6453F0A28BD512C00775176 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		C6453F0C28BD512C00775176 /* XYChartDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYChartDataSource.swift; sourceTree = "<group>"; };
+		C6453F0D28BD512C00775176 /* XYChartDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYChartDelegate.swift; sourceTree = "<group>"; };
+		C6453F0E28BD512C00775176 /* XYChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYChart.swift; sourceTree = "<group>"; };
+		C6453F0F28BD512C00775176 /* XYGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYGraph.swift; sourceTree = "<group>"; };
+		C6453F1128BD512C00775176 /* CGPoint + Scale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint + Scale.swift"; sourceTree = "<group>"; };
+		C6453F1328BD512C00775176 /* TimePeriodTabsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePeriodTabsDelegate.swift; sourceTree = "<group>"; };
+		C6453F1428BD512C00775176 /* TimePeriodTabs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePeriodTabs.swift; sourceTree = "<group>"; };
+		C6453F1628BD512C00775176 /* UnitConvertion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitConvertion.swift; sourceTree = "<group>"; };
+		C6453F1728BD512C00775176 /* FinancialAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancialAPI.swift; sourceTree = "<group>"; };
+		C6453F1828BD512C00775176 /* Companies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Companies.swift; sourceTree = "<group>"; };
+		C6453F1A28BD512C00775176 /* en.xcloc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = en.xcloc; sourceTree = "<group>"; };
+		C6453F1B28BD512C00775176 /* Exchanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exchanges.swift; sourceTree = "<group>"; };
+		C6453F1C28BD512C00775176 /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		C6453F1E28BD512C00775176 /* SearchBarDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarDataSource.swift; sourceTree = "<group>"; };
+		C6453F1F28BD512C00775176 /* SeachIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeachIcon.swift; sourceTree = "<group>"; };
+		C6453F2028BD512C00775176 /* SearchListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchListView.swift; sourceTree = "<group>"; };
+		C6453F2128BD512C00775176 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		C6453F2228BD512C00775176 /* SearchBarDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarDelegate.swift; sourceTree = "<group>"; };
+		C6453F2428BD512C00775176 /* TabViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewDelegate.swift; sourceTree = "<group>"; };
+		C6453F2528BD512C00775176 /* TabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		C6453F2728BD512C00775176 /* DictionaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryView.swift; sourceTree = "<group>"; };
+		C6453F2A28BD512C00775176 /* ViewController + SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController + SearchBar.swift"; sourceTree = "<group>"; };
+		C6453F2B28BD512C00775176 /* ViewController + TabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController + TabView.swift"; sourceTree = "<group>"; };
+		C6453F2C28BD512C00775176 /* ViewController + XYGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController + XYGraph.swift"; sourceTree = "<group>"; };
+		C6453F2D28BD512C00775176 /* ViewController + TimePeriodTabs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController + TimePeriodTabs.swift"; sourceTree = "<group>"; };
+		C6453F2E28BD512C00775176 /* ObserveObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObserveObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +151,16 @@
 		C6453EDB28BD504A00775176 /* StockForecast */ = {
 			isa = PBXGroup;
 			children = (
+				C6453F2628BD512C00775176 /* Financials */,
+				C6453F0828BD512C00775176 /* LoadingViews */,
+				C6453F1528BD512C00775176 /* Model */,
+				C6453F1D28BD512C00775176 /* SearchBar */,
+				C6453F2328BD512C00775176 /* TabView */,
+				C6453F1228BD512C00775176 /* Technicals */,
+				C6453F1028BD512C00775176 /* utilities */,
+				C6453F2828BD512C00775176 /* ViewController */,
+				C6453F0B28BD512C00775176 /* XYChart */,
 				C6453EDC28BD504A00775176 /* AppDelegate.swift */,
-				C6453EDE28BD504A00775176 /* ViewController.swift */,
 				C6453EE028BD504A00775176 /* Assets.xcassets */,
 				C6453EE228BD504A00775176 /* Main.storyboard */,
 				C6453EE528BD504A00775176 /* StockForecast.entitlements */,
@@ -119,6 +183,106 @@
 				C6453EFA28BD504B00775176 /* StockForecastUITestsLaunchTests.swift */,
 			);
 			path = StockForecastUITests;
+			sourceTree = "<group>";
+		};
+		C6453F0828BD512C00775176 /* LoadingViews */ = {
+			isa = PBXGroup;
+			children = (
+				C6453F0928BD512C00775176 /* WelcomView.swift */,
+				C6453F0A28BD512C00775176 /* LoadingView.swift */,
+			);
+			path = LoadingViews;
+			sourceTree = "<group>";
+		};
+		C6453F0B28BD512C00775176 /* XYChart */ = {
+			isa = PBXGroup;
+			children = (
+				C6453F0C28BD512C00775176 /* XYChartDataSource.swift */,
+				C6453F0D28BD512C00775176 /* XYChartDelegate.swift */,
+				C6453F0E28BD512C00775176 /* XYChart.swift */,
+				C6453F0F28BD512C00775176 /* XYGraph.swift */,
+			);
+			path = XYChart;
+			sourceTree = "<group>";
+		};
+		C6453F1028BD512C00775176 /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C6453F1128BD512C00775176 /* CGPoint + Scale.swift */,
+			);
+			path = utilities;
+			sourceTree = "<group>";
+		};
+		C6453F1228BD512C00775176 /* Technicals */ = {
+			isa = PBXGroup;
+			children = (
+				C6453F1328BD512C00775176 /* TimePeriodTabsDelegate.swift */,
+				C6453F1428BD512C00775176 /* TimePeriodTabs.swift */,
+			);
+			path = Technicals;
+			sourceTree = "<group>";
+		};
+		C6453F1528BD512C00775176 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C6453F1628BD512C00775176 /* UnitConvertion.swift */,
+				C6453F1728BD512C00775176 /* FinancialAPI.swift */,
+				C6453F1828BD512C00775176 /* Companies.swift */,
+				C6453F1928BD512C00775176 /* StockWatcher Localizations */,
+				C6453F1B28BD512C00775176 /* Exchanges.swift */,
+				C6453F1C28BD512C00775176 /* JSONParser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C6453F1928BD512C00775176 /* StockWatcher Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				C6453F1A28BD512C00775176 /* en.xcloc */,
+			);
+			path = "StockWatcher Localizations";
+			sourceTree = "<group>";
+		};
+		C6453F1D28BD512C00775176 /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				C6453F1E28BD512C00775176 /* SearchBarDataSource.swift */,
+				C6453F1F28BD512C00775176 /* SeachIcon.swift */,
+				C6453F2028BD512C00775176 /* SearchListView.swift */,
+				C6453F2128BD512C00775176 /* SearchBar.swift */,
+				C6453F2228BD512C00775176 /* SearchBarDelegate.swift */,
+			);
+			path = SearchBar;
+			sourceTree = "<group>";
+		};
+		C6453F2328BD512C00775176 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				C6453F2428BD512C00775176 /* TabViewDelegate.swift */,
+				C6453F2528BD512C00775176 /* TabView.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		C6453F2628BD512C00775176 /* Financials */ = {
+			isa = PBXGroup;
+			children = (
+				C6453F2728BD512C00775176 /* DictionaryView.swift */,
+			);
+			path = Financials;
+			sourceTree = "<group>";
+		};
+		C6453F2828BD512C00775176 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C6453EDE28BD504A00775176 /* ViewController.swift */,
+				C6453F2A28BD512C00775176 /* ViewController + SearchBar.swift */,
+				C6453F2B28BD512C00775176 /* ViewController + TabView.swift */,
+				C6453F2C28BD512C00775176 /* ViewController + XYGraph.swift */,
+				C6453F2D28BD512C00775176 /* ViewController + TimePeriodTabs.swift */,
+				C6453F2E28BD512C00775176 /* ObserveObject.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6453EE128BD504A00775176 /* Assets.xcassets in Resources */,
+				C6453F3B28BD512C00775176 /* en.xcloc in Resources */,
 				C6453EE428BD504A00775176 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,8 +416,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6453F4828BD512C00775176 /* ViewController + TabView.swift in Sources */,
+				C6453F3628BD512C00775176 /* TimePeriodTabsDelegate.swift in Sources */,
+				C6453F4728BD512C00775176 /* ViewController + SearchBar.swift in Sources */,
 				C6453EDF28BD504A00775176 /* ViewController.swift in Sources */,
+				C6453F3D28BD512C00775176 /* JSONParser.swift in Sources */,
+				C6453F4A28BD512C00775176 /* ViewController + TimePeriodTabs.swift in Sources */,
+				C6453F4028BD512C00775176 /* SearchListView.swift in Sources */,
+				C6453F3828BD512C00775176 /* UnitConvertion.swift in Sources */,
+				C6453F3528BD512C00775176 /* CGPoint + Scale.swift in Sources */,
+				C6453F3C28BD512C00775176 /* Exchanges.swift in Sources */,
+				C6453F3028BD512C00775176 /* LoadingView.swift in Sources */,
+				C6453F3E28BD512C00775176 /* SearchBarDataSource.swift in Sources */,
+				C6453F3328BD512C00775176 /* XYChart.swift in Sources */,
+				C6453F3F28BD512C00775176 /* SeachIcon.swift in Sources */,
+				C6453F3428BD512C00775176 /* XYGraph.swift in Sources */,
+				C6453F4228BD512C00775176 /* SearchBarDelegate.swift in Sources */,
+				C6453F3228BD512C00775176 /* XYChartDelegate.swift in Sources */,
 				C6453EDD28BD504A00775176 /* AppDelegate.swift in Sources */,
+				C6453F4B28BD512C00775176 /* ObserveObject.swift in Sources */,
+				C6453F3A28BD512C00775176 /* Companies.swift in Sources */,
+				C6453F4528BD512C00775176 /* DictionaryView.swift in Sources */,
+				C6453F3928BD512C00775176 /* FinancialAPI.swift in Sources */,
+				C6453F3128BD512C00775176 /* XYChartDataSource.swift in Sources */,
+				C6453F4928BD512C00775176 /* ViewController + XYGraph.swift in Sources */,
+				C6453F4128BD512C00775176 /* SearchBar.swift in Sources */,
+				C6453F4328BD512C00775176 /* TabViewDelegate.swift in Sources */,
+				C6453F4428BD512C00775176 /* TabView.swift in Sources */,
+				C6453F3728BD512C00775176 /* TimePeriodTabs.swift in Sources */,
+				C6453F2F28BD512C00775176 /* WelcomView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
