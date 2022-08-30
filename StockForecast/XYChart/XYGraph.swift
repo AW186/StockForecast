@@ -48,13 +48,16 @@ class XYGraph: NSView {
     }
     func drawData() {
         paths.removeAll()
+        print("lines \(lines.count)")
         lines.forEach { line in
             line.1.setStroke()
             let path = NSBezierPath.init()
             path.move(to: line.0[0].scale(size: self.bounds.size))
             line.0.forEach { point in
+                print(point)
                 path.line(to: point.scale(size: self.bounds.size))
             }
+            print("end")
             path.lineWidth = 1
             path.stroke()
         }

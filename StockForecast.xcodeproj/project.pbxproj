@@ -42,6 +42,7 @@
 		C6453F4928BD512C00775176 /* ViewController + XYGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F2C28BD512C00775176 /* ViewController + XYGraph.swift */; };
 		C6453F4A28BD512C00775176 /* ViewController + TimePeriodTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F2D28BD512C00775176 /* ViewController + TimePeriodTabs.swift */; };
 		C6453F4B28BD512C00775176 /* ObserveObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F2E28BD512C00775176 /* ObserveObject.swift */; };
+		C6453F4D28BE5B4900775176 /* Techinical.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6453F4C28BE5B4900775176 /* Techinical.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		C6453F2C28BD512C00775176 /* ViewController + XYGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController + XYGraph.swift"; sourceTree = "<group>"; };
 		C6453F2D28BD512C00775176 /* ViewController + TimePeriodTabs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController + TimePeriodTabs.swift"; sourceTree = "<group>"; };
 		C6453F2E28BD512C00775176 /* ObserveObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObserveObject.swift; sourceTree = "<group>"; };
+		C6453F4C28BE5B4900775176 /* Techinical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Techinical.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				C6453F1628BD512C00775176 /* UnitConvertion.swift */,
+				C6453F4C28BE5B4900775176 /* Techinical.swift */,
 				C6453F1728BD512C00775176 /* FinancialAPI.swift */,
 				C6453F1828BD512C00775176 /* Companies.swift */,
 				C6453F1928BD512C00775176 /* StockWatcher Localizations */,
@@ -421,6 +424,7 @@
 				C6453F4728BD512C00775176 /* ViewController + SearchBar.swift in Sources */,
 				C6453EDF28BD504A00775176 /* ViewController.swift in Sources */,
 				C6453F3D28BD512C00775176 /* JSONParser.swift in Sources */,
+				C6453F4D28BE5B4900775176 /* Techinical.swift in Sources */,
 				C6453F4A28BD512C00775176 /* ViewController + TimePeriodTabs.swift in Sources */,
 				C6453F4028BD512C00775176 /* SearchListView.swift in Sources */,
 				C6453F3828BD512C00775176 /* UnitConvertion.swift in Sources */,

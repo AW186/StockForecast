@@ -10,10 +10,23 @@ import Cocoa
 class ViewController: NSViewController, NSWindowDelegate {
     var ticker: String = ""
     var startTime: TimeInterval = 0
+    var processData: [CGFloat] = []
     var graphData: [CGPoint] = [CGPoint(x: 0.0, y: 0.0)]
     var timeData: [TimeInterval] = [0]
     var range: (CGFloat, CGFloat) = (0, 1)
     var domain: (CGFloat, CGFloat) = (0, 1)
+    lazy var momentumCheckBox: NSButton = {
+        let view = NSButton.init(title: "Momentum Analysis", target: self, action: #selector(showMomentum))
+        view.setButtonType(.switch)
+        view.contentTintColor = NSColor.black
+        view.font = NSFont.systemFont(ofSize: 14);
+        view.sizeToFit()
+        return view
+    }()
+    @objc func showMomentum() {
+        updateGraph()
+        print("check")
+    }
     lazy var timePeriodTabs: TimePeriodTabs = {
         let view = TimePeriodTabs.init(frame: NSRect())
         view.delegate = self
@@ -51,6 +64,7 @@ class ViewController: NSViewController, NSWindowDelegate {
         self.view.addSubview(dictionaryView)
         self.view.addSubview(searchBar)
         self.view.addSubview(timePeriodTabs)
+        self.view.addSubview(momentumCheckBox)
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear() {
@@ -67,6 +81,7 @@ class ViewController: NSViewController, NSWindowDelegate {
         layoutTabs()
         layoutDictionaryView()
         layoutTimePeriodTabs()
+        layoutMomentumCheckBox()
     }
     func updateGraph() {
         graph.removeFromSuperview()
@@ -127,6 +142,10 @@ extension ViewController {
         tabs.frame.origin.x = view.bounds.midX + 175
         tabs.frame.size.width = 225
         tabs.frame.size.height = 30
+    }
+    func layoutMomentumCheckBox() {
+        momentumCheckBox.sizeToFit()
+        momentumCheckBox.frame.origin = CGPoint.init(x: self.view.bounds.width - 300, y: 20)
     }
 }
 

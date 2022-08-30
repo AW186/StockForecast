@@ -37,7 +37,22 @@ extension ViewController: XYChartDataSource {
     }
     
     func getXYData() -> [([CGPoint], NSColor)] {
-        [(self.graphData, NSColor.blue)]
+        if (momentumCheckBox.state == .on) {
+            let ema12 = Techinical.ema(data: processData, period: 12)
+            let ema26 = Techinical.ema(data: processData, period: 26)
+            var ema12Graph = [CGPoint].init(repeating: CGPoint(), count: self.graphData.count)
+            var ema26Graph = [CGPoint].init(repeating: CGPoint(), count: self.graphData.count)
+            for i in 0..<graphData.count {
+                let index = ema12.count - graphData.count + i
+                ema12Graph[i].y = ema12[index]
+                ema26Graph[i].y = ema26[index]
+                ema12Graph[i].x = graphData[i].x
+                ema26Graph[i].x = graphData[i].x
+            }
+            return [(self.graphData, NSColor.blue), (ema12Graph, NSColor.green), (ema26Graph, NSColor.red)]
+        } else {
+            return [(self.graphData, NSColor.blue)]
+        }
     }
     func getXYData(by set: Int) {
         

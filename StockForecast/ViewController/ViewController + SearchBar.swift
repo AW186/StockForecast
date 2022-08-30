@@ -8,8 +8,22 @@
 import Foundation
 import Cocoa
 extension ViewController: SearchBarDelegate {
-    
     private func processPriceData(data: Data) {
+        let dict = JSONParser.convertToDictionary(data: data)
+        guard let priceHistory = dict?["results"] as? [[String : Any]] else {
+            return
+        }
+        if (priceHistory.count == 0) {
+            print("ticker not found")
+            return
+        }
+        self.processData = [CGFloat].init(repeating: 0, count: priceHistory.count)
+        let count = priceHistory.count
+        for i in 0..<count {
+            self.processData[i] = priceHistory[i]["o"] as! CGFloat
+        }
+    }
+    private func hitsotyPriceData(data: Data) {
         let dict = JSONParser.convertToDictionary(data: data)
         guard let priceHistory = dict?["results"] as? [[String : Any]] else {
             return
@@ -38,28 +52,43 @@ extension ViewController: SearchBarDelegate {
         updatePricesGraph(key: key, time: 5 * 365 * 24 * 3600, interval: "day")
     }
     
-    func updatePricesGraph(key: String, time: TimeInterval, interval: String) {
+    func getPriceData(key: String, time: TimeInterval, interval: String) -> Data? {
         let start = UnitConvertion.timeFromNow(format: "YYYY-MM-dd", time: -time)
         let end = UnitConvertion.timeToString(time: NSDate().timeIntervalSince1970, format: "YYYY-MM-dd")
         let request = NSMutableURLRequest(url: NSURL(string: "https://api.polygon.io/v2/aggs/ticker/\(key)/range/1/\(interval)/\(start)/\(end)?adjusted=true&sort=asc&limit=50000&apiKey=rew9uH5wJOVt5PIDtpnDWzm92zye9_aX")! as URL,
                                                 cachePolicy: .useProtocolCachePolicy,
                                             timeoutInterval: 10.0)
         request.httpMethod = "GET"
-        
+        var buff: Data?
         var finished = false
         let session = URLSession.shared
         let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
             if (error != nil) {
                 print(error)
-            } else {
-                self.processPriceData(data: data!)
-                finished = true
             }
+            buff = data
+            finished = true
         })
-
         dataTask.resume()
         print("processing " + key)
         while(!finished) {}
+        return buff
+    }
+    func updateProcessPrice(key: String) {
+        let buff = getPriceData(key: key, time:  5 * 365 * 24 * 3600, interval: "day")
+        guard let data = buff else {
+            self.processData = []
+            return
+        }
+        processPriceData(data: data)
+    }
+    func updatePricesGraph(key: String, time: TimeInterval, interval: String) {
+        let buff = getPriceData(key: key, time: time, interval: interval)
+        guard let data = buff else {
+            self.graphData = [CGPoint(x: 0.0, y: 0.0)]
+            return
+        }
+        hitsotyPriceData(data: data)
         self.updateGraph()
     }
     private func processTickerDetail(data: Data) -> [String : String] {
@@ -122,6 +151,7 @@ extension ViewController: SearchBarDelegate {
         if key.isEmpty {
             return
         }
+        updateProcessPrice(key: key)
         updatePricesGraph(key: key, time: timePeriodTabs.period.rawValue, interval: timePeriodTabs.getInterval())
         updateTickerDetail(key: key)
     }
